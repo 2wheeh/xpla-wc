@@ -1,21 +1,11 @@
-import { ConnectType, useConnectedWallet, useWallet, WalletApp } from '@xpla/wallet-provider';
+import { Connect } from './Connect';
+import { Send } from './Send';
 
 export function Wallet() {
-  const { connect, disconnect } = useWallet();
-  const wallet = useConnectedWallet();
-
   return (
-    <div>
-      {wallet ? (
-        <div>
-          <p>Connected to: {wallet.walletAddress}</p>
-          <button onClick={() => disconnect()}>Disconnect</button>
-        </div>
-      ) : (
-        <button onClick={() => connect(ConnectType.WALLETCONNECT, undefined, WalletApp.XPLA_GAMES_NEW)}>
-          Connect to XG
-        </button>
-      )}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <Connect />
+      <Send />
     </div>
   );
 }

@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.80.7",
+    "@xpla.kitchen/utils": "^0.2.2",
     "@xpla/wallet-controller": "^1.7.2",
     "@xpla/wallet-provider": "^1.7.2",
+    "@xpla/xpla.js": "^1.7.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

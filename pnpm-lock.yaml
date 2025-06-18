@@ -11,12 +11,18 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.80.7
         version: 5.80.7(react@19.1.0)
+      '@xpla.kitchen/utils':
+        specifier: ^0.2.2
+        version: 0.2.2
       '@xpla/wallet-controller':
         specifier: ^1.7.2
         version: 1.7.2(bufferutil@4.0.9)(utf-8-validate@6.0.5)
       '@xpla/wallet-provider':
         specifier: ^1.7.2
         version: 1.7.2(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@6.0.5)
+      '@xpla/xpla.js':
+        specifier: ^1.7.0
+        version: 1.7.0
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -607,6 +613,12 @@ packages:
   '@types/node@24.0.3':
     resolution: {integrity: sha512-R4I/kzCYAdRLzfiCabn9hxWfbuHS573x+r0dJMkkzThEa7pbrcDWK+9zu3e7aBOouf+rQAciqPFMnxwr0aWgKg==}
 
+  '@types/numeral@2.0.5':
+    resolution: {integrity: sha512-kH8I7OSSwQu9DS9JYdFWbuvhVzvFRoCPCkGxNwoGgaPeDfEPJlcxNvEOypZhQ3XXHsGbfIuYcxcJxKUfJHnRfw==}
+
+  '@types/ramda@0.27.66':
+    resolution: {integrity: sha512-i2YW+E2U6NfMt3dp0RxNcejox+bxJUNDjB7BpYuRuoHIzv5juPHkJkNgcUOu+YSQEmaWu8cnAo/8r63C0NnuVA==}
+
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
@@ -726,6 +738,10 @@ packages:
   '@walletconnect/window-metadata@1.0.0':
     resolution: {integrity: sha512-9eFvmJxIKCC3YWOL97SgRkKhlyGXkrHwamfechmqszbypFspaSk+t2jQXAEU7YClHF6Qjw5eYOmy1//zFi9/GA==}
 
+  '@xpla.kitchen/utils@0.2.2':
+    resolution: {integrity: sha512-FARtBumd6X2rqT2hq4y/w/PeVO88wiYFi8PHX0f33zLyAJDFa1Z49HQbumdBYnW17FVHGAVe32IgC8CxDRrE/g==}
+    engines: {node: '>=10'}
+
   '@xpla/use-wallet@1.7.2':
     resolution: {integrity: sha512-iIs4hwVy+aQCR2Z/5Z0+41Bk7Im67thKrZqC8erGiTEHh4p8r2TRYQqoBKwwg1u+qCIg9Zp2LU1GjIcXNVZiCg==}
     engines: {node: '>=16'}
@@ -814,6 +830,9 @@ packages:
 
   bech32@2.0.0:
     resolution: {integrity: sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==}
+
+  bignumber.js@9.3.0:
+    resolution: {integrity: sha512-EM7aMFTXbptt/wZdMlBv2t8IViwQL+h6SLHosp8Yf0dqJMTnY6iL32opnAB6kAdL0SZPuvcAzFr31o0c/R3/RA==}
 
   bip32@3.1.0:
     resolution: {integrity: sha512-eoeajYEzJ4d6yyVtby8C+XkCeKItiC4Mx56a0M9VaqTMC73SWOm4xVZG7SaR8e/yp4eSyky2XcBpH3DApPdu7Q==}
@@ -1506,6 +1525,9 @@ packages:
     resolution: {integrity: sha512-X75ZN8DCLftGM5iKwoYLA3rjnrAEs97MkzvSd4q2746Tgpg8b8XWiBGiBG4ZpgcAqBgtgPHTiAc8ZMCvZuikDw==}
     engines: {node: '>=10'}
 
+  numeral@2.0.6:
+    resolution: {integrity: sha512-qaKRmtYPZ5qdw4jWJD6bxEf1FJEqllJrwxCLIm0sQU/A7v2/czigzOb+C2uSiFsa9lBUzeH7M1oK+Q+OLxL3kA==}
+
   object-inspect@1.13.4:
     resolution: {integrity: sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==}
     engines: {node: '>= 0.4'}
@@ -1652,6 +1674,9 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  ramda@0.27.2:
+    resolution: {integrity: sha512-SbiLPU40JuJniHexQSAgad32hfwd+DRUdwF2PlVuI5RZD0/vahUco7R8vD86J/tcEKKF9vZrUVwgtmGCqlCKyA==}
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -1831,6 +1856,9 @@ packages:
     resolution: {integrity: sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ==}
     engines: {node: '>=0.6.0'}
 
+  tiny-warning@1.0.3:
+    resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==}
+
   tinyglobby@0.2.14:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
@@ -1848,6 +1876,9 @@ packages:
     engines: {node: '>=18.12'}
     peerDependencies:
       typescript: '>=4.8.4'
+
+  ts-toolbelt@6.15.5:
+    resolution: {integrity: sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==}
 
   tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
@@ -2488,6 +2519,12 @@ snapshots:
     dependencies:
       undici-types: 7.8.0
 
+  '@types/numeral@2.0.5': {}
+
+  '@types/ramda@0.27.66':
+    dependencies:
+      ts-toolbelt: 6.15.5
+
   '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
       '@types/react': 19.1.8
@@ -2689,6 +2726,15 @@ snapshots:
     dependencies:
       '@walletconnect/window-getters': 1.0.0
 
+  '@xpla.kitchen/utils@0.2.2':
+    dependencies:
+      '@types/numeral': 2.0.5
+      '@types/ramda': 0.27.66
+      bignumber.js: 9.3.0
+      numeral: 2.0.6
+      ramda: 0.27.2
+      tiny-warning: 1.0.3
+
   '@xpla/use-wallet@1.7.2(react@19.1.0)':
     dependencies:
       '@xpla/wallet-types': 1.7.2
@@ -2834,6 +2880,8 @@ snapshots:
   base64-js@1.5.1: {}
 
   bech32@2.0.0: {}
+
+  bignumber.js@9.3.0: {}
 
   bip32@3.1.0:
     dependencies:
@@ -3610,6 +3658,8 @@ snapshots:
       util: 0.12.5
       vm-browserify: 1.1.2
 
+  numeral@2.0.6: {}
+
   object-inspect@1.13.4: {}
 
   object-is@1.1.6:
@@ -3763,6 +3813,8 @@ snapshots:
   querystring-es3@0.2.1: {}
 
   queue-microtask@1.2.3: {}
+
+  ramda@0.27.2: {}
 
   randombytes@2.1.0:
     dependencies:
@@ -3980,6 +4032,8 @@ snapshots:
     dependencies:
       setimmediate: 1.0.5
 
+  tiny-warning@1.0.3: {}
+
   tinyglobby@0.2.14:
     dependencies:
       fdir: 6.4.6(picomatch@4.0.2)
@@ -3994,6 +4048,8 @@ snapshots:
   ts-api-utils@2.1.0(typescript@5.8.3):
     dependencies:
       typescript: 5.8.3
+
+  ts-toolbelt@6.15.5: {}
 
   tslib@1.14.1: {}
 
