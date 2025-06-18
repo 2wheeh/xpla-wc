@@ -11,7 +11,7 @@ export function Connect() {
           connect(
             ConnectType.WALLETCONNECT, // This enables skipping the connection type selection screen
             undefined, // This is for extension wallets; we don't need it for WalletConnect
-            WalletApp.XPLA_GAMES_NEW // This enables to redirect to new XG wallet deeplink
+            WalletApp.XPLA_GAMES_NEW // This enables to use deeplink for new XPLA GAMES Wallet
           )
         }
       >

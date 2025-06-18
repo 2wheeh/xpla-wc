@@ -1,6 +1,6 @@
 import { toAmount } from '@xpla.kitchen/utils';
 import { useConnectedWallet, useWallet, type TxResult } from '@xpla/wallet-provider';
-import { Coin, MsgSend, Numeric } from '@xpla/xpla.js';
+import { MsgSend } from '@xpla/xpla.js';
 import { useState } from 'react';
 
 const XPLA_DENOM = 'axpla';
@@ -11,16 +11,16 @@ export function Send() {
   const wallet = useConnectedWallet();
 
   const [receiver, setReceiver] = useState('xpla1ek9fpjx5qrga6ajp0lk5akwm4s24twmzhc9725');
-  const [amount, setAmount] = useState('0.1');
+  const [input, setInput] = useState('0.1');
   const [txResult, setTxResult] = useState<TxResult | null>(null);
 
   const send = async () => {
     if (!wallet) return;
 
     try {
-      const msg = new MsgSend(wallet.walletAddress, receiver, [
-        new Coin(XPLA_DENOM, toAmount(Numeric.parse(amount).toString(), { decimals: XPLA_DECIMALS })),
-      ]);
+      const msg = new MsgSend(wallet.walletAddress, receiver, {
+        [XPLA_DENOM]: toAmount(input, { decimals: XPLA_DECIMALS }),
+      });
 
       const res = await post({ msgs: [msg] });
       setTxResult(res);
@@ -47,8 +47,8 @@ export function Send() {
         <input
           style={{ width: '100%' }}
           id='amount'
-          value={amount}
-          onChange={e => setAmount(e.target.value)}
+          value={input}
+          onChange={e => setInput(e.target.value)}
           placeholder='Amount'
         />
       </div>
