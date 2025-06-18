@@ -13,14 +13,14 @@ pnpm create vite my-dapp
 ```
 
 Install dependencies to your React App.
-You need @xpla/wallet-provider, @xpla/wallet-controller version 1.7.2 or later:
+You need `@xpla/wallet-provider`, `@xpla/wallet-controller` version 1.7.2 or later:
 
 ```bash
 pnpm install @xpla/xpla.js @xpla/wallet-provider @xpla/wallet-controller @xpla.kitchen/utils @tanstack/react-query
 
 ```
 
-Polyfill Buffer for @xpla/wallet-provider to work:
+Polyfill `Buffer` for `@xpla/wallet-provider` to work:
 
 ```bash
 pnpm install -D vite-plugin-node-polyfills
