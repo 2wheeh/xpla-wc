@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const cw20Contract = 'xpla1xljvdrtyn86kv7hrdhae4qxdy8krajah3w7xhtyrt0n69und9xdqdhrasc'; // Replace it with the address of the CW20 token created in example-4.js.
 
-export function Sign() {
+export function Sign({ receiver, amount }: { receiver: string; amount: string }) {
   const wallet = useConnectedWallet();
   const [signed, setSigned] = useState<SignResult | null>(null);
   const sign = async () => {
@@ -14,8 +14,8 @@ export function Sign() {
 
     const transferMsg = new MsgExecuteContract(wallet.walletAddress, cw20Contract, {
       transfer: {
-        recipient: 'xpla1ek9fpjx5qrga6ajp0lk5akwm4s24twmzhc9725',
-        amount: '0',
+        recipient: receiver,
+        amount,
       },
     });
 
