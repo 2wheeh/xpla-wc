@@ -2,7 +2,7 @@
 
 New XPLA GAMES Wallet has released - [Download](https://xpla.games/download_new)
 
-This is a simple example of how to integrate XPLA GAMES Wallet via WalletConnect using @xpla/wallet-provider.
+This is a simple example of how to integrate XPLA GAMES Wallet via WalletConnect using `@xpla/wallet-provider`.
 
 ### Install
 
